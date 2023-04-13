@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+/************ BEGIN CONTENT CONTAINER  ***************/
+.content-container {
+    margin:0 auto;
+    padding-top:2%;
+    padding-right:35%;
+    padding-bottom:10%;
+    padding-left:15%;
+    height:100vh;
+    background-image: linear-gradient(
+            340deg,
+            hsl(158deg 95% 34%) 1%,
+            hsl(152deg 49% 47%) 43%,
+            hsl(149deg 41% 54%) 50%,
+            hsl(148deg 40% 61%) 51%,
+            hsl(146deg 39% 67%) 51%,
+            hsl(145deg 37% 72%) 49%,
+            hsl(144deg 35% 78%) 49%,
+            hsl(144deg 31% 84%) 50%,
+            hsl(143deg 23% 89%) 57%,
+            hsl(0deg 0% 95%) 99%
+    );
+}
+
+
+
+
+/************ BEGIN FORM  ***************/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    margin-top:10px;
+    background-color: #04AA6D;
+    color: white;
+    font-weight:bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #1f1f1f;
+}
+
+.form-container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type=submit] {
+        margin-top: 10px;
+    }
+}
+}
+
+
+/************** END FORM ***************/
